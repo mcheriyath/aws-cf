@@ -27,7 +27,7 @@
 		}]
 	}, {
 		"Name": "projectdevprivatesg",
-		"Description": "Project Dev Priavte Security Group",
+		"Description": "Project Dev Private Security Group",
 		"Rules": [{
 			"IpProtocol": "tcp",
 			"FromPort": "22",
