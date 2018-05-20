@@ -1,0 +1,60 @@
+{
+    "NetworkInfo": {
+        "ServerName": "amqpserver",
+        "Env": "staging",
+        "Type": "app",
+        "Region": "us-east-1",
+    	  "Role": "EC2-Instance-Profile",
+	      "VPCName": "vpc-staging-nonprod"
+    },
+    "ServerTags": {
+        "Name": "amqp",
+        "Env": "staging",
+        "Category": "queue",
+        "Owner": "mithun@cheriyath.in"
+    },
+    "Instances": [{
+        "ServerName": "amqpserver1az1",
+        "KeyPairName": "staging-ec2",
+        "InstanceType": "m5.xlarge",
+        "ImageId": "ami-4d423230",
+        "Tenancy": "default",
+        "VolumeSize": "20",
+        "AZ": "us-east-1a",
+        "SecurityGroupTagName": "rabbit-cluster",
+        "DomainName": "amqp1"
+    },
+    {
+         "ServerName": "amqpserver2az1",
+         "KeyPairName": "staging-ec2",
+         "InstanceType": "m5.xlarge",
+         "ImageId": "ami-4d423230",
+         "Tenancy": "default",
+         "VolumeSize": "20",
+         "AZ": "us-east-1a",
+         "SecurityGroupTagName": "rabbit-cluster",
+         "DomainName": "amqp2"        
+    },
+    {
+         "ServerName": "amqpserver3az2",
+         "KeyPairName": "staging-ec2",
+         "InstanceType": "m5.xlarge",
+         "ImageId": "ami-4d423230",
+         "Tenancy": "default",
+         "VolumeSize": "20",
+         "AZ": "us-east-1b",
+         "SecurityGroupTagName": "rabbit-cluster",
+         "DomainName": "amqp3"
+    },
+    {
+         "ServerName": "amqpserver4az2",
+         "KeyPairName": "staging-ec2",
+         "InstanceType": "m5.xlarge",
+         "ImageId": "ami-4d423230",
+         "Tenancy": "default",
+         "VolumeSize": "20",
+         "AZ": "us-east-1b",
+         "SecurityGroupTagName": "rabbit-cluster",
+         "DomainName": "amqp4"        
+   }]
+}
