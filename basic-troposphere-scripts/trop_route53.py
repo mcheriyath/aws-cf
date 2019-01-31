@@ -32,13 +32,13 @@ ec2_instance_1 = template.add_resource(ec2.Instance(
     SecurityGroups=["mcheriyath-sg"],
     Tags=Tags(**{
         'Name': 'DevOpsDenver',
-        'Owner': 'mcheriyath@prokarma.com'
+        'Owner': 'mithun@email.com'
         })
 ))
 
 myDNSRecord = template.add_resource(RecordSetType(
     "myDNSRecord",
-    HostedZoneName=Join("", ["prokarmalab.com", "."]),
+    HostedZoneName=Join("", ["example.com", "."]),
     Comment="DNS name for my instance.",
     Name=Join("", ["ops1", ".", "applicationname", ".",
               "prokarmalab.com", "."]),
