@@ -28,7 +28,7 @@ ec2_instance_1 = template.add_resource(ec2.Instance(
     SecurityGroups=["mcheriyath-sg"],
     Tags=Tags(**{
         'Name': 'DevOpsDenver',
-        'Owner': 'mcheriyath@prokarma.com'
+        'Owner': 'mithun@email.com
         })
 ))
 
@@ -40,7 +40,7 @@ ec2_instance_2 = template.add_resource(ec2.Instance(
     SecurityGroups=["mcheriyath-sg"],
     Tags=Tags(**{
         'Name': 'DevOpsDenver',
-        'Owner': 'mcheriyath@prokarma.com'
+        'Owner': 'mithun@email.com'
         })
 ))
  
